@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,17 +15,6 @@ nav {
     align-items: center;
     padding: 0rem calc((100vw - 1300px) / 2);
 }
-
-
-/* .logo {
-    color: grey;
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: inherit;
-    letter-spacing: 0.5rem;
-    padding: 0 2rem;
-    font-family: 'Akaya Telivigala', cursive;
-} */
 
 .logo {
     display: flex;
@@ -45,7 +33,7 @@ nav {
     color: whitesmoke;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-bottom: 2px solid white;
 }
 
@@ -54,7 +42,6 @@ nav a {
     color: #fff;
     padding: 0 1.5rem;
     font-size: 1.8rem;
-    font-family: "Akaya Telivigala", cursive;
 }
 
 nav a:hover {
@@ -165,7 +152,6 @@ button:hover {
         border: none;
     }
     .nav-items.active {
-        /* top: 80px; */
         right: 0;
         opacity: 1;
         transition: all 0.5s ease-in-out;
@@ -183,23 +169,5 @@ button:hover {
     }
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-@media screen and (max-width: 556px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
-    nav a {
-        padding: 0rem 0.5rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
-    nav a {
-        padding: 0rem 0.5rem;
     }
 }

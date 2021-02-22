@@ -142,19 +142,47 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    nav a {
+        padding: 0rem 1.5rem;
+    }
     .nav-items {
-        display: none;
+        display: grid;
+        grid-template-columns: auto;
+        background: rgb(31, 29, 29);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        height: 50vh;
+        top: 80px;
+        right: -100%;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.5s ease;
+        border: none;
+    }
+    .nav-items.active {
+        /* top: 80px; */
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
     }
     .menu-toggle .bar {
         display: block;
         cursor: pointer;
         margin-right: 20px;
     }
-    .hero-container {
-        grid-template-columns: 1fr;
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
     }
-    nav a {
-        padding: 0rem 1.5rem;
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 

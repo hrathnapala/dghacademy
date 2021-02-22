@@ -76,7 +76,7 @@ nav a:hover {
 
 .column-left h1 {
     margin-bottom: 0.8rem;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .column-left p {
@@ -85,7 +85,7 @@ nav a:hover {
     line-height: 1.5;
 }
 
-button {
+.button {
     padding: 0.5rem 2rem;
     font-size: 1.2rem;
     border: none;
@@ -96,9 +96,10 @@ button {
     cursor: pointer;
     border-radius: 50px;
     box-shadow: 0 3px 5px rgb(255, 2, 2);
+    text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background: transparent;
     color: #fff;
     border: 2px solid cyan;
@@ -147,7 +148,7 @@ button:hover {
         top: 80px;
         left: -100%;
         justify-content: center;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s ease;
         border: none;
     }
@@ -170,4 +171,99 @@ button:hover {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+footer {
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+}
+
+.social-icons {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    z-index: 2;
+    padding: 30px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    color: #fff;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.icon1:hover {
+    color: #FF0000;
+}
+
+.icon2:hover {
+    color: rgb(59, 90, 154);
+}
+
+.icon3:hover {
+    color: #0077B5;
+}
+
+.about {
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+
+.about h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex-basis: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    min-width: 230px;
+    margin-bottom: 20px;
+    z-index: 2;
+    box-shadow: 3px 0px 20px rgb(59, 119, 134);
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgb(60, 66, 68);
+    padding: 12px;
+}
+
+.profile img {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.profile p {
+    margin-bottom: 10px;
+    color: #c98122;
 }

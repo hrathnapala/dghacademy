@@ -210,4 +210,17 @@ nav a:hover {
     nav a {
         padding: 0rem 0.5rem;
     }
+    .button {
+        position: absolute;
+        top: 66%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        color: #1670f0;
+        padding: 10px 10px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        box-shadow: 0 20px 50px rgba(240, 9, 9, 0.5);
+    }
 }

@@ -141,6 +141,15 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 556px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    nav a {
+        padding: 0rem 0.5rem;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .hero-container {
         grid-template-columns: 1fr;

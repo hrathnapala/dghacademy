@@ -151,6 +151,7 @@ nav a:hover {
         opacity: 1;
         transition: all 0.5s ease;
         border: none;
+        z-index: 9999;
     }
     .nav-items.active {
         left: 0;
@@ -180,6 +181,7 @@ footer {
     left: 0;
     right: 0;
     background: #000;
+    z-index: 9999;
 }
 
 .social-icons {
